@@ -1,0 +1,78 @@
+{% load staticfiles %}
+
+
+   
+      
+    <!-- Slider Start -->
+    <section id="slider" style="background: url('{{ landing_entries.landing_background2}} ' ) no-repeat;background-size: cover;
+                                  background-attachment: fixed;
+                                  background-position: 10% 0%;
+                                  padding: 200px 0 280px 0;
+                                  position: relative;">
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2">
+            <div class="block">
+              <h1 class="animated fadeInUp" style='font-weight:bold;'> {% block company_name %} {{ landing_entries.company_name }}   {% endblock %}  </h1>
+              <p class="animated fadeInUp"> {{ landing_entries.company_description}}  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wrapper Start -->
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="block">
+              <div class="section-title">
+                <h2>About Us</h2>
+                <p> {{ landing_entries.about_us_description1}} </p>
+              </div>
+              <p>  {{ landing_entries.about_us_description2}} </p>
+            </div>
+          </div><!-- .col-md-7 close -->
+          <div class="col-md-5 col-sm-12">
+            <div class="block">
+              <img src="{{ landing_entries.landing_background3}} " alt="Img">
+            </div>
+          </div><!-- .col-md-5 close -->
+        </div>
+      </div>
+    </section>
+
+  <section id="feature" style='  background: url("{{landing_entries.landing_background1}}" );
+                                  background-position: 50% 94px;
+                                  width: 100%;
+                                  display: block;
+                                  position: relative;
+                                  overflow: visible;
+                                  background-attachment: fixed;
+                                  background-repeat: no-repeat;
+                                  background-position: center center;
+                                  background-color: #fff;
+                                  -webkit-background-size: cover;
+                                  -moz-background-size: cover;
+                                  -o-background-size: cover;
+                                  background-size: cover;
+                                  -webkit-box-sizing: border-box;
+                                  -moz-box-sizing: border-box;
+                                  box-sizing: border-box;
+                                  -webkit-backface-visibility: hidden;
+                                  backface-visibility: hidden;
+                                  padding: 100px 0;'>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+          <h2 style="color:White;"> {{ landing_entries.goal_title}}  </h2>
+          <p style="color:lightgrey;">{{ landing_entries.goal_description}} </p>
+          <a href="{% url 'work' %}" class="btn btn-view-works">View Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+

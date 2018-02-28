@@ -1,0 +1,2 @@
+﻿﻿INSERT INTO para_info (company_name, company_description, about_us_description1, about_us_description2) 
+values ('Ruby', 'About first blog', 'This going well. Thank you', current_timestamp);

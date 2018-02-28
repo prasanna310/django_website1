@@ -1,0 +1,7 @@
+﻿﻿﻿INSERT INTO para_info (company_name, company_description, about_us_description1, about_us_description2, goal_title,goal_description ) 
+values ('Ruby Tourism',
+ 'We love to see our customer happy to be spending their time in Nepal. a complete . We strive to provide a complete tourism experience through our services',
+ 'A team of highliy motivated staff composed of experienced trekker and guides, we are a compete team you can trust  ', 
+ 'Soething more about the team...',
+ 'Goal Statement1', 
+ 'Goal descrition.');

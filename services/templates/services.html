@@ -1,0 +1,51 @@
+
+{% load static %}
+
+
+   
+    <!-- Service Start -->
+    <section id="service">
+      <div class="container">
+          
+          
+        <div class="row">
+          <div class="section-title">
+            <h2>Our Services</h2>
+            <p> We take great pride in helping people like you have the best experience possible. Take a look at the services you can expect from us. </p>
+          </div>
+        </div>
+          
+          
+        <div class="row "> 
+            {% for service in service_entries %}
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="service-item">
+                  <i class="{{service.service_logo_ionicon_name}}"></i>
+                  <h4> {{service.service_name}} </h4>
+                  <p> {{service.service_description}} </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+          
+          
+      </div>        
+    </section>
+
+
+    <!-- Call to action Start -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h2>We make sure you have delightful experiences.</h2>
+              <p> Read more about what we do, and our philosophy of good times. Judge for yourself the work and results we’ve achieved for others, and meet our highly experienced team who just love to travel.</p>
+              <a class="btn btn-default btn-call-to-action" href="{% url 'contact' %}" >Tell Us Your Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+

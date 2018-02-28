@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+ 
+
+{% block content %}  
+
+<!DOCTYPE html>
+<html class="no-js">
+
+  <body>
+  
+        
+        <!-- Slider Start -->
+        <section id="global-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="block">
+                  <h1>Drop Us A Note</h1>
+                  <p> If you have any questions regarding our services, or want to check on rates, please leave us a note. Also, we not only appreciate your feedbacks and comments, we look forward to them! </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact form start -->
+        <section id="contact-form">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="block">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="block">
+                  <form>
+                    <div class="form-group-2">
+                      <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="btn btn-default" type="submit">Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id="contact-box" class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="block">
+                  <h2>Reach Us At:</h2>
+                  <ul class="address-block">
+                    <li>
+                      <i class="fa fa-map-marker"></i> {{contact_entries.contact_address}}
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope-o"></i>Email: {{contact_entries.contact_email}}
+                    </li>
+                    <li>
+                      <i class="fa fa-phone"></i>Phone: {{contact_entries.contact_phone}}
+                    </li>
+                  </ul>
+
+ 
+                  <ul class="social-icons">    
+                   
+                    <li>
+                      <a href="{{contact_entries.company_twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="{{contact_entries.company_facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </li>
+                       <li>
+                      <a href="{{contact_entries.company_linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>        
+                    <li>
+                      <a href="{{contact_entries.company_instagram}}" target="_blank"><i class="fa fa-instagram" ></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="block">
+                  <h2>Locate Us In Google Map</h2>
+                    <div class="google-map">
+                      <div id="map"></div>
+                        <input type='hidden' id="address_x" value="{{contact_entries.address_x}}">
+                        <input type='hidden' id="address_y" value="{{contact_entries.address_y}}">
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+     
+        
+      </body>
+    </html>
+
+{% endblock %}
