@@ -18,7 +18,7 @@
               <div class="col-md-12">
                 <div class="block">
                   <h1>Drop Us A Note</h1>
-                  <p>Don’t just take our word for it. Check out some of our latest work.</p>
+                  <p> If you have any questions regarding our services, or want to check on rates, please leave us a note. Also, we not only appreciate your feedbacks and comments, we look forward to them! </p>
                 </div>
               </div>
             </div>
@@ -57,33 +57,33 @@
             <div id="contact-box" class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="block">
-                  <h2>Stop By For A visit</h2>
+                  <h2>Reach Us At:</h2>
                   <ul class="address-block">
                     <li>
-                      <i class="fa fa-map-marker"></i>North Main Street,Brooklyn Australia
+                      <i class="fa fa-map-marker"></i> {{contact_entries.contact_address}}
                     </li>
                     <li>
-                      <i class="fa fa-envelope-o"></i>Email: contact@mail.com
+                      <i class="fa fa-envelope-o"></i>Email: {{contact_entries.contact_email}}
                     </li>
                     <li>
-                      <i class="fa fa-phone"></i>Phone:+88 01672 506 744
+                      <i class="fa fa-phone"></i>Phone: {{contact_entries.contact_phone}}
                     </li>
                   </ul>
 
+ 
                   <ul class="social-icons">    
                    
                     <li>
-                      <a href="http://www.twitter.com/pr307" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="{{contact_entries.company_twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="http://www.facebook.com/pr310" target="_blank"><i class="fa fa-facebook"></i></a>
+                      <a href="{{contact_entries.company_facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
                     </li>
                        <li>
-                      <a href="http://www.linkedin.com/prasanna-dahal" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    </li>
-        
+                      <a href="{{contact_entries.company_linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>        
                     <li>
-                      <a href="#"><i class="fa fa-behance" target="_blank"></i></a>
+                      <a href="{{contact_entries.company_instagram}}" target="_blank"><i class="fa fa-instagram" ></i></a>
                     </li>
                   </ul>
                 </div>
@@ -93,26 +93,16 @@
                   <h2>Locate Us In Google Map</h2>
                     <div class="google-map">
                       <div id="map"></div>
+                        <input type='hidden' id="address_x" value="{{contact_entries.address_x}}">
+                        <input type='hidden' id="address_y" value="{{contact_entries.address_y}}">
+                        
                     </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- Call to action Start -->
-        <section id="call-to-action">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="block">
-                  <h2>We design delightful digital experiences.</h2>
-                  <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-                  <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      
      
         
       </body>
