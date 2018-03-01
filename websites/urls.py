@@ -32,8 +32,8 @@ urlpatterns = [
     #url('%s/base/'%app_name, base_views.home, name='base') , 
     url(r'%s/landing'%app_name, landing_views.home, name='landing') ,
 
-    
-    url(r'^pasal/', views.home, name='home') ,
+    url(r'^$', views.home, name='home') ,     
+    url(r'^pasal/', views.home, name='pasal') ,
     url(r'^base/', base_views.home, name='base') ,
     url(r'^work', base_views.base_with_work, name='work') ,
     url(r'^support', base_views.base_with_support, name='support') ,
