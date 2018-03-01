@@ -136,8 +136,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#STATIC_ROOT = os.path.join( BASE_DIR ,"staticfiles")
-STATIC_ROOT = "staticfiles"
+STATIC_ROOT = os.path.join( BASE_DIR ,"staticfiles")
+#STATIC_ROOT = "staticfiles"
 
 
 STATICFILES_DIRS = ( 
@@ -157,7 +157,7 @@ DATABASES['default'].update(db_from_env)
 
 # Simplified static file serving. Reduces the size of static files
 # https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
